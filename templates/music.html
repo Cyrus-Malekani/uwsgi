@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<title>Octavio Mateo Lavagno</title>
+</head>
+<body>
+  <br>
+  <br>
+  <center><p><span style="font-size: 123px">Octavio Mateo Lavagno</span></p>
+    <table id="links" cellspacing="20"> 
+        <tr>
+          <td>
+              <a href="/">Videos</a>
+          </td>
+          <td>
+              <a href="/music">Music</a>
+          </td>
+        </tr>
+      </table>
+    <table>
+      {% set video_per_row = 3 %}
+      {% for i in range(0, video|length, video_per_row) %}
+        <tr>
+          {% for video in video[i:i+video_per_row] %}
+            <td>
+              <video width="333" height="333" controls> 
+              <source src="{{ url_for('static', filename=video) }}" type="video/mp4"></video>
+            </td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </table>    
+  </center>
+</body>
+</html>

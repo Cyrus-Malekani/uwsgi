@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<title>Octavio Mateo Lavagno</title>
+</head>
+<body>
+  <br>
+  <br>
+  <center><p><span style="font-size: 123px">Octavio Mateo Lavagno</span></p>
+  <table>
+    <tr>
+      <td>
+        <video width="333" height="400" controls>
+          <source src={{ url_for('static', filename="brag.mp4") }} w type="video/mp4">
+        </video>
+      </td>
+      <td>
+        <video width="333" height="400" controls>
+          <source src={{ url_for('static', filename="tvny.mp4") }} type="video/mp4">
+        </video>
+      </td>
+      <td>
+        <video width="333" height="400" controls>
+          <source src={{ url_for('static', filename="Podcast_12.mp4") }} type="video/mp4">
+        </video>
+      </td>
+    </tr>
+  </table>
+  </center>
+</body>
+</html>
