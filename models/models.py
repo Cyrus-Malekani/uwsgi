@@ -11,9 +11,9 @@ class Movie(me.Document):
 
 #If the document has nested fields, use EmbeddedDocument to defined the fields of the embedded document and EmbeddedDocumentField to declare it on the parent document.
 
-class Imdb(me.EmbeddedDocument):
-    imdb_id = me.StringField()
-    rating = me.DecimalField()
-    votes = me.IntField()
+#class Imdb(me.EmbeddedDocument):
+#    imdb_id = me.StringField()
+#    rating = me.DecimalField()
+#    votes = me.IntField()
 
 
