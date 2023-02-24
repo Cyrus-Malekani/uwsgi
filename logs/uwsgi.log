@@ -1,0 +1,28 @@
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Feb 23 10:44:28 2023] ***
+compiled with version: 12.2.0 on 22 February 2023 15:34:30
+os: Linux-5.19.0-31-generic #32-Ubuntu SMP PREEMPT_DYNAMIC Fri Jan 20 15:20:08 UTC 2023
+nodename: parsa
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/myapp
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7744
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+VirtualHosting mode enabled.
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/myapp.sock fd 3
+Python version: 3.10.7 (main, Nov 24 2022, 19:45:47) [GCC 12.2.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5604605e5450
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 637, cores: 1)
